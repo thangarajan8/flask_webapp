@@ -8,9 +8,8 @@ app = Flask(__name__)
  
 @app.route('/get_ml', methods=['POST'])
 def products():
-    veri = request.form['query']
-    print(veri)
-    return f'here is veri: {veri}'
+    query = request.form['query']
+    return f'The given query is {query}'
 
 
 
